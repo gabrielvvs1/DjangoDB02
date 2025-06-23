@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Todo List</h1>
+<h3>Todo List</h3>
 
 {% if todos %}
     <table class="table">
@@ -20,9 +20,9 @@
             <td>{{ forloop.counter }}</td>
             <td>{{ todo.title }}</td>
             <td>{{ todo.is_completed }}</td>
-            <td>{{ todo.created_at }}</td>
-            <td><a href="{% url 'edit_todo' todo.id %}">Editar</a></td>
-            <td><a href="{% url 'delete_todo' todo.id %}" onclick="return confirm('Quer mesmo Deletar?');">Deletar</a></td>
+            <td>{{ todo.created_at }}</td>  
+            <td><a href="{% url 'edit_todo' todo.id %}" class="btn btn-info"></button>Editar</a></td>
+            <td><a href="{% url 'delete_todo' todo.id %}" onclick="return confirm('Quer mesmo Deletar?');" class="btn btn-danger">Deletar</a></td>
         </tr>
 {% endfor %}
     </table>
