@@ -41,10 +41,4 @@ Projeto de lista de tarefas (To-do List) desenvolvido com Django e Bootstrap.
 - `todo_list/` — Aplicação de tarefas
 - `Templates/` — Templates HTML com Bootstrap
 
-## Melhorias visuais
-- Navbar e rodapé personalizados
-- Tabela de tarefas estilizada
-- Layout responsivo
 
-## Autor
-- Gabriel Victor
