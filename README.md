@@ -7,7 +7,6 @@ Projeto de lista de tarefas (To-do List) desenvolvido com Django e Bootstrap.
 - Editar tarefas
 - Deletar tarefas
 - Marcar tarefas como concluídas
-- Interface responsiva com Bootstrap
 
 ## Como rodar o projeto
 
