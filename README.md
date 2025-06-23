@@ -1,20 +1,18 @@
-# Django Todo List
+# Django To-do List
 
-Este é um projeto de lista de tarefas (Todo List) desenvolvido com Django e Bootstrap.
+Projeto de lista de tarefas (To-do List) desenvolvido com Django e Bootstrap.
 
 ## Funcionalidades
 - Adicionar tarefas
 - Editar tarefas
 - Deletar tarefas
 - Marcar tarefas como concluídas
-- Interface responsiva com Bootstrap
 
 ## Como rodar o projeto
 
 1. **Clone o repositório:**
    ```bash
-   git clone <url-do-repositorio>
-   cd <nome-da-pasta>
+   git clone https://github.com/gabrielvvs1/DjangoDB02.git
    ```
 2. **Crie e ative um ambiente virtual:**
    ```bash
@@ -25,11 +23,11 @@ Este é um projeto de lista de tarefas (Todo List) desenvolvido com Django e Boo
    ```
 3. **Instale as dependências:**
    ```bash
-   pip install django
+   pip install Django
    ```
-4. **Aplique as migrações:**
+4. **Entrar na pasta do projeto:**
    ```bash
-   python manage.py migrate
+   cd todoApp
    ```
 5. **Rode o servidor de desenvolvimento:**
    ```bash
@@ -50,5 +48,3 @@ Este é um projeto de lista de tarefas (Todo List) desenvolvido com Django e Boo
 
 ## Autor
 - Gabriel Victor
-
-
