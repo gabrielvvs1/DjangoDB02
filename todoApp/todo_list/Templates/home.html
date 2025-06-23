@@ -16,34 +16,20 @@
             </tr>
         </thead>
 {% for todo in todos %}
-        {% if todo.isCompleted %}
-        <tr class="table-success">
-            <td>{{ todo.id }}</td>
+        <tr{% if todo.is_completed %} class="table-success"{% endif %}>
+            <td>{{ forloop.counter }}</td>
             <td>{{ todo.title }}</td>
-            <td>{{ todo.completed }}</td>
-            <td>{{ todo.title }}</td>
-            <td>{{ todo.created_at }}
-            <td><a href="#">Update</a></td>
-            <td><a href="#">Delete</a></td>
-        </tr>
-        {% else %}
-        <tr>
-            <td>{{ todo.id }}</td>
-            <td>{{ todo.title }}</td>
-            <td>{{ todo.completed }}</td>
+            <td>{{ todo.is_completed }}</td>
             <td>{{ todo.created_at }}</td>
-            <td><a href="#">Update</a></td>
-            <td><a href="#">Delete</a></td>
+            <td><a href="{% url 'edit_todo' todo.id %}">Editar</a></td>
+            <td><a href="{% url 'delete_todo' todo.id %}" onclick="return confirm('Quer mesmo Deletar?');">Deletar</a></td>
         </tr>
-        {% endif %}
 {% endfor %}
-
-</table>
+    </table>
 {% else %}
-       
-    <p>No todos available. </p>
-
+    <p>Nenhuma tarefa encontrada.</p>
 {% endif %}
+
 {% endblock %}
 
 
