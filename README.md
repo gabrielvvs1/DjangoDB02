@@ -12,8 +12,7 @@ Projeto de lista de tarefas (To-do List) desenvolvido com Django e Bootstrap.
 
 1. **Clone o repositório:**
    ```bash
-   git clone <url-do-repositorio>
-   cd <nome-da-pasta>
+   git clone https://github.com/gabrielvvs1/DjangoDB02.git
    ```
 2. **Crie e ative um ambiente virtual:**
    ```bash
@@ -24,11 +23,11 @@ Projeto de lista de tarefas (To-do List) desenvolvido com Django e Bootstrap.
    ```
 3. **Instale as dependências:**
    ```bash
-   pip install django
+   pip install Django
    ```
-4. **Aplique as migrações:**
+4. **Entrar na pasta do projeto:**
    ```bash
-   python manage.py migrate
+   cd todoApp
    ```
 5. **Rode o servidor de desenvolvimento:**
    ```bash
